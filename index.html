@@ -1,13 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Jyoti</title>
+  <script src="https://kit.fontawesome.com/d86848cfe0.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://kit.fontawesome.com/16d2250538.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+ <header>
+  <input type="checkbox" id="check">
+  <label for="check" id="btn"><i class="fas fa-bars"></i></label>
+  <label for="check" id="cancel"><i class="fas fa-times"></i></label>
+  <div class="sidebar">
+    <ul class="d-flex">
+      <li class=""><a href="#home-page" class="text-decoration-none px-3 ">Home</a></li>
+      <li><a href="#introduction" class="text-decoration-none  px-3">About Me</a></li>
+      <li><a href="#projects" class="text-decoration-none  px-3">Projects</a></li>
+    </ul>
+  </div>
+ </header>
+  <main>
+
+    <section class="home" id="home-page">
+      <div class="home-div">
+        <div class="headline">
+          <h4>Hi, I am</h4>
+          <h1>Jyoti Rai</h1>
+          <h4>Full Stack Developer</h4>
+        </div>
+        <div class="home-p mt-3">
+          <p>Proficient in <span>Ruby & Rails, </span><span>JavaScript,</span> <span>HTML & CSS, </span> <span>SASS &
+              Bootstrap</span></p>
+        </div>
+        <div class="home-info text-center">
+          <a href="https://www.linkedin.com/in/rai-jyoti/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a href="https://github.com/jrai0792" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+    </section>
+
+    <section class="portfolio" id="projects">
+      <h4 class="font-weight-bold">Projects</h4>
+      <div class="portfolio-projects d-flex flex-column">
+        <div class="projects-row1 d-flex justify-content-around">
+          <div class="portfolio-project">
+            <h5 class="font-weight-bold">Food-Coma</h5>
+            <img src="./assets/images/project1.png" alt="project 1">
+            <div class="project-specs">
+              <p>In this project I have built a food articles web application using ruby on rails, Bootstrap, SASS and Postgress. </p>
+              <p><span>Ruby</span><span> Ruby On Rails</span><span> Bootstrap</span><span> SASS</span><span> Postgress</span></p>
+              <div class="project-buttons">
+                <span class="project-live"><a href="https://fathomless-bayou-77286.herokuapp.com/" target="_blank">Live demo <i
+                      class="fas fa-external-link-alt"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/food-coma" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <h5 class="font-weight-bold">Social Media</h5>
+            <img src="./assets/images/project2.png" alt="project 2">
+            <div class="project-specs">
+              <p> Social Media is a website where users can connect with each other. A user can send and receive friend requests from other users. Users can see the posts created by their friends on their timeline. They can like it as well as comment on it. Users can also see their pending friend requests and choose to decline the invitation.</p>
+              <p><span>Bootstrap</span><span>SASS</span><span>PostgreSQL</span></p>
+              <div class="project-buttons">
+                <span class="project-live"><a href="" target="_blank">Live demo <i
+                      class="fas fa-external-link-alt"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/ror-social-scaffold" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-row2 d-flex justify-content-around">
+          <div class="portfolio-project">
+            <h5 class="font-weight-bold">Concerts Page</h5>
+            <img src="./assets/images/project3.png" alt="">
+            <div class="project-specs">
+              <p>This project is based on an online website for Concert & Event. I customized it to a music concert with three pages, i.e homepage, about us and ticket page. </p>
+              <p><span>HTML</span><span>CSS</span><span>Bootstrap</span></p>
+              <div class="project-buttons">
+                <span class="project-live"><a href="https://jrai0792.github.io/concerts-page/tickets.html" target="_blank">Live demo <i
+                      class="fas fa-external-link-alt"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/concerts-page" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <h5 class="font-weight-bold">the-next-web-clone</h5>
+            <img src="./assets/images/project4.png" alt="">
+            <div class="project-specs">
+              <p>This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.</p>
+              <p><span>Bootstrap</span><span>SASS</span><span>PostgreSQL</span></p>
+              <div class="project-buttons">
+                <span class="project-live"><a href="https://jrai0792.github.io/the-next-web-clone/" target="_blank">Live demo <i
+                      class="fas fa-external-link-alt text-white"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/the-next-web-clone" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="intro" id="introduction">
+      <div class="img">
+        <img src="./images/" alt="">
+      </div>
+      <div class="intro-div">
+        <h5 class="font-weight-bold">About Me</h5>
+        <p>I am a .</p>
+        <div class="intro-contact">
+          <div class="row">
+            <div class="col-lg-4 col-md-6"><i class="far fa-user"></i> Name</div>
+            <div class="col-lg-2 col-md-2">:</div>
+            <div class="col-lg-6 col-md-6">Jyoti Rai</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6"><i class="fas fa-phone-alt"></i> Phone</div>
+            <div class="col-lg-2 col-md-2">:</div>
+            <div class="col-lg-6 col-md-6">(+91) 9886966105</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6"><i class="far fa-envelope"></i> Email</div>
+            <div class="col-lg-2 col-md-2">:</div>
+            <div class="col-lg-6 col-md-6">jyotikiran12@gmail.com</div>
+          </div>
+        </div>
+        <div class="intro-interests mt-4">
+          <h5>My Interests</h5>
+          <span><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</span>
+          <span><i class="fa fa-globe" aria-hidden="true"></i> Travelling</span>
+          <span><i class="fas fa-film"  aria-hidden="true"></i> Movie</span>
+        </div>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+
+  <footer id="footer">
+    <div class="footer-content d-flex justify-content-center">
+        <p>Copyright 2020. All rights reserved </p>
+        <div class="footer-links d-flex">
+            <div class="footer-link">
+                <a href="https://github.com/jrai-792" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-link">
+                <a href="https://www.linkedin.com/in/rai-jyoti/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
+
 </html>
