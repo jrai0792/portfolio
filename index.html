@@ -8,155 +8,218 @@
   <script src="https://kit.fontawesome.com/d86848cfe0.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/style.css">
-  <script src="https://kit.fontawesome.com/16d2250538.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
- <header>
-  <input type="checkbox" id="check">
-  <label for="check" id="btn"><i class="fas fa-bars"></i></label>
-  <label for="check" id="cancel"><i class="fas fa-times"></i></label>
-  <div class="sidebar">
-    <ul class="d-flex">
-      <li class=""><a href="#home-page" class="text-decoration-none px-3 ">Home</a></li>
-      <li><a href="#introduction" class="text-decoration-none  px-3">About Me</a></li>
-      <li><a href="#projects" class="text-decoration-none  px-3">Projects</a></li>
-    </ul>
-  </div>
- </header>
+
+
+  <header class="gray-bg">
+    <nav class="navbar navbar-default navbar-expand-md">
+      <div class="container-fluid">
+        <div class="navbar-header ml-3 mr-3">
+          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#myNavbar1"
+            aria-controls="myNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse ml-5 mr-5 justify-content-end" id="myNavbar1">
+          <ul class="nav navbar-nav navbar-righ menu justify-content-sm-end">
+            <li class="nav-item mr-sm-5 ml-sm-5 mr-md-5 ml-md-5">
+              <a class="nav-link active darkgray-clr text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item mr-sm-5 ml-sm-5 mr-md-5 ml-md-5">
+              <a class="nav-link darkgray-clr text-white" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item mr-sm-5 ml-sm-5 mr-lg-5 ml-md-5">
+              <a class="nav-link darkgray-clr text-white" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main>
-
-    <section class="home" id="home-page">
-      <div class="home-div">
-        <div class="headline">
-          <h4>Hi, I am</h4>
-          <h1>Jyoti Rai</h1>
-          <h4>Full Stack Developer</h4>
-        </div>
-        <div class="home-p mt-3">
-          <p>Proficient in <span>Ruby & Rails, </span><span>JavaScript,</span> <span>HTML & CSS, </span> <span>SASS &
-              Bootstrap</span></p>
-        </div>
-        <div class="home-info text-center">
-          <a href="https://www.linkedin.com/in/rai-jyoti/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-          <a href="https://github.com/jrai0792" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        </div>
+    <section class="home full-width" id="home">
+      <div class="home-heading">
+        <h4 class="auto-margin text-center pt-5 col-sm-12">Hi, I am</h4>
+        <h1 class="auto-margin text-center col-sm-12">Jyoti Rai</h1>
+        <h4 class="auto-margin text-center col-sm-12">Full Stack Developer</h4>
+      </div>
+      <div class="home-p auto-margin text-center col-sm-12">
+        <p>Proficient in <span>Ruby & Rails, </span><span>JavaScript,</span> <span>HTML & CSS, </span> <span>SASS &
+            Bootstrap</span></p>
+      </div>
+      <div class="home-info text-center auto-margin col-sm-12">
+        <a href="https://www.linkedin.com/in/rai-jyoti/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href="https://github.com/jrai0792" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      </div>
     </section>
-
     <section class="portfolio" id="projects">
-      <h4 class="font-weight-bold">Projects</h4>
-      <div class="portfolio-projects d-flex flex-column">
-        <div class="projects-row1 d-flex justify-content-around">
-          <div class="portfolio-project">
-            <h5 class="font-weight-bold">Food-Coma</h5>
-            <img src="./assets/images/project1.png" alt="project 1">
-            <div class="project-specs">
-              <p>In this project I have built a food articles web application using ruby on rails, Bootstrap, SASS and Postgress. </p>
-              <p><span>Ruby</span><span> Ruby On Rails</span><span> Bootstrap</span><span> SASS</span><span> Postgress</span></p>
-              <div class="project-buttons">
-                <span class="project-live"><a href="https://fathomless-bayou-77286.herokuapp.com/" target="_blank">Live demo <i
-                      class="fas fa-external-link-alt"></i></a></span>
-                <span class="project-code"><a href="https://github.com/jrai0792/food-coma" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+      <h4 class="auto-margin text-center col-sm-12 pt-5 pb-3 font-weight-bold">Projects</h4>
+      <div class="portfolio-projects ">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2"></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pt-5 pb-4 project-container">
+            <h5 class="font-weight-bold pt-2 pb-4 text-center font-weight-bold">Food-Coma</h5>
+            <img src="./assets/images/project1.png" alt="project 1" class="img-responsive pt-3 pb-4" width="100%">
+            <div class="project-specs pt-2 pb-4">
+              <p>In this project I have built a food articles web application using ruby on rails, Bootstrap, SASS and
+                Postgress. </p>
+              <p><span>Ruby</span><span> Ruby On Rails</span><span> Bootstrap</span><span> SASS</span><span>
+                  Postgress</span></p>
+              <div class="project-buttons align-center">
+                <span class="project-live"><a href="https://fathomless-bayou-77286.herokuapp.com/" target="_blank" class="btn btn-green text-white">Live
+                    demo <i class="fas fa-external-link-alt"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/food-coma" target="_blank" class="btn btn-green text-white">Source code
+                    <i class="fab fa-github"></i></a></span>
               </div>
             </div>
           </div>
-          <div class="portfolio-project">
-            <h5 class="font-weight-bold">Social Media</h5>
-            <img src="./assets/images/project2.png" alt="project 2">
-            <div class="project-specs">
-              <p> Social Media is a website where users can connect with each other. A user can send and receive friend requests from other users. Users can see the posts created by their friends on their timeline. They can like it as well as comment on it. Users can also see their pending friend requests and choose to decline the invitation.</p>
-              <p><span>Bootstrap</span><span>SASS</span><span>PostgreSQL</span></p>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pt-5 pb-4 mx-auto project-container">
+            <h5 class="font-weight-bold pt-2 pb-4 text-center">Social Media</h5>
+            <img src="./assets/images/project2.png" alt="project 2" class="img-responsive pt-3 pb-4" width="100%">
+            <div class="project-specs pt-2 pb-4">
+              <p>Social Media is a website where users can connect with each other. A user can send and receive friend
+                requests from other users. Users can see the posts created by their friends on their timeline. They can
+                like it as well as comment on it. Users can also see their pending friend requests and choose to decline
+                the invitation.</p>
+              <p><span>Ruby</span><span> Ruby On Rails</span><span> Bootstrap</span><span> SASS</span></p>
               <div class="project-buttons">
-                <span class="project-live"><a href="" target="_blank">Live demo <i
-                      class="fas fa-external-link-alt"></i></a></span>
-                <span class="project-code"><a href="https://github.com/jrai0792/ror-social-scaffold" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+                <span class="project-live"><a href="https://calm-brushlands-89859.herokuapp.com/"
+                    target="_blank" class="btn btn-green text-white">Live demo <i class="fas fa-external-link-alt"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/ror-social-scaffold" target="_blank" class="btn btn-green text-white">Source
+                    code <i class="fab fa-github"></i></a></span>
               </div>
             </div>
           </div>
         </div>
-        <div class="projects-row2 d-flex justify-content-around">
-          <div class="portfolio-project">
-            <h5 class="font-weight-bold">Concerts Page</h5>
-            <img src="./assets/images/project3.png" alt="">
-            <div class="project-specs">
-              <p>This project is based on an online website for Concert & Event. I customized it to a music concert with three pages, i.e homepage, about us and ticket page. </p>
-              <p><span>HTML</span><span>CSS</span><span>Bootstrap</span></p>
+        <div class="row pt-4">
+          <div class="col-lg-2 col-md-2 col-sm-2"></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pt-5 pb-4 project-container">
+            <h5 class="font-weight-bold pt-2 pb-4 text-center">Concerts Page</h5>
+            <img src="./assets/images/project3.png" alt="project 3" class="img-responsive pt-3 pb-4" width="100%">
+            <div class="project-specs pt-2 pb-4">
+              <p>This project is based on an online website for Concert & Event. I customized it to a music concert with
+                three pages, i.e homepage, about us and ticket page.</p>
+              <p><span>HTML</span><span> CSS</span><span> Bootstrap</span></p>
               <div class="project-buttons">
-                <span class="project-live"><a href="https://jrai0792.github.io/concerts-page/tickets.html" target="_blank">Live demo <i
+                <span class="project-live"><a href="https://jrai0792.github.io/concerts-page/" target="_blank" class="btn btn-green text-white">Live demo <i
                       class="fas fa-external-link-alt"></i></a></span>
-                <span class="project-code"><a href="https://github.com/jrai0792/concerts-page" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/concerts-page"
+                    target="_blank" class="btn btn-green text-white">Source code <i class="fab fa-github"></i></a></span>
               </div>
             </div>
           </div>
-          <div class="portfolio-project">
-            <h5 class="font-weight-bold">the-next-web-clone</h5>
-            <img src="./assets/images/project4.png" alt="">
-            <div class="project-specs">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pt-5 pb-4 mx-auto project-container">
+            <h5 class="font-weight-bold pt-2 pb-4 text-center">The next Web Clone</h5>
+            <img src="./assets/images/project4.png" alt="project 4" class="img-responsive pt-3 pb-4" width="100%">
+            <div class="project-specs pt-2 pb-4">
               <p>This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.</p>
-              <p><span>Bootstrap</span><span>SASS</span><span>PostgreSQL</span></p>
+              <p><span>HTML</span><span> CSS</span><span> Bootstrap</span></p>
               <div class="project-buttons">
-                <span class="project-live"><a href="https://jrai0792.github.io/the-next-web-clone/" target="_blank">Live demo <i
-                      class="fas fa-external-link-alt text-white"></i></a></span>
-                <span class="project-code"><a href="https://github.com/jrai0792/the-next-web-clone" target="_blank">Source code <i class="fab fa-github"></i></a></span>
+                <span class="project-live"><a href="https://jrai0792.github.io/the-next-web-clone/" target="_blank" class="btn btn-green text-white">Live demo <i
+                      class="fas fa-external-link-alt"></i></a></span>
+                <span class="project-code"><a href="https://github.com/jrai0792/the-next-web-clone"
+                    target="_blank" class="btn btn-green text-white">Source code<i class="fab fa-github"></i></a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  
-    <section class="intro" id="introduction">
-      <div class="img">
-        <img src="./images/" alt="">
-      </div>
+    
+    <section class="contacts" id="about">
       <div class="intro-div">
-        <h5 class="font-weight-bold">About Me</h5>
-        <p>I am a .</p>
+        <h5 class="font-weight-bold text-center pt-4 pb-4">About me </h5>
         <div class="intro-contact">
           <div class="row">
-            <div class="col-lg-4 col-md-6"><i class="far fa-user"></i> Name</div>
-            <div class="col-lg-2 col-md-2">:</div>
+            <div class="col-lg-6 col-md-6 auto-margin text-center"><i class="far fa-user"></i> Name :</div>
             <div class="col-lg-6 col-md-6">Jyoti Rai</div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-md-6"><i class="fas fa-phone-alt"></i> Phone</div>
-            <div class="col-lg-2 col-md-2">:</div>
+            <div class="col-lg-6 col-md-6 auto-margin text-center"><i class="fas fa-phone-alt"></i> Phone : </div>
             <div class="col-lg-6 col-md-6">(+91) 9886966105</div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-md-6"><i class="far fa-envelope"></i> Email</div>
-            <div class="col-lg-2 col-md-2">:</div>
+            <div class="col-lg-6 col-md-6 auto-margin text-center"><i class="far fa-envelope"></i> Email : </div>
             <div class="col-lg-6 col-md-6">jyotikiran12@gmail.com</div>
           </div>
         </div>
+          <div class="row mt-5 center-block">
+            <div class="col-sm-3 mx-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Languages</h5>
+                  <a href="#" class="btn btn-green text-white mb-2">Javascript</a>
+                  <a href="#" class="btn btn-green text-white mb-2">Ruby</a>
+                  <a href="#" class="btn btn-green text-white mb-2">HTML</a>
+                  <a href="#" class="btn btn-green text-white mb-2">CSS</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Frameworks</h5>
+                  <a href="#" class="btn btn-green text-white mb-2">Bootstrap</a>
+                  <a href="#" class="btn btn-green text-white mb-2">Ruby On Rails</a>
+                  <a href="#" class="btn btn-green text-white mb-2">RSpec</a>
+                  <a href="#" class="btn btn-green text-white mb-2">Capybara</a>
+                  <a href="#" class="btn btn-green text-white mb-2">Selenium</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 mx-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Skills</h5>
+                  <a href="#" class="btn btn-green text-white mb-2">Github</a>
+                  <a href="#" class="btn btn-green text-white mb-2">Codepen</a>
+                  <a href="#" class="btn btn-green text-white mb-2">Terminal</a>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="intro-interests mt-4">
-          <h5>My Interests</h5>
-          <span><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</span>
-          <span><i class="fa fa-globe" aria-hidden="true"></i> Travelling</span>
-          <span><i class="fas fa-film"  aria-hidden="true"></i> Movie</span>
+          <h5 class="text-center pb-2">My Interests</h5>
+          <p class="text-center">
+            <span><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</span>
+            <span><i class="fa fa-globe" aria-hidden="true"></i> Travelling</span>
+            <span><i class="fas fa-film"  aria-hidden="true"></i> Movie</span>
+          </p>
         </div>
       </div>
     </section>
 
-    
-
   </main>
-
-
-  <footer id="footer">
+  <footer id="footer" class="gray-bg pt-2">
     <div class="footer-content d-flex justify-content-center">
-        <p>Copyright 2020. All rights reserved </p>
+        <p class="px-3">Copyright 2020. All rights reserved </p>
         <div class="footer-links d-flex">
-            <div class="footer-link">
-                <a href="https://github.com/jrai-792" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="footer-link px-3">
+                <a href="https://github.com/jrai-792" target="_blank"><i class="fab fa-github  text-white"></i></a>
             </div>
             <div class="footer-link">
-                <a href="https://www.linkedin.com/in/rai-jyoti/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/rai-jyoti/" target="_blank"><i class="fab fa-linkedin-in text-white"></i></a>
             </div>
         </div>
     </div>
 </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 
 </body>
 
